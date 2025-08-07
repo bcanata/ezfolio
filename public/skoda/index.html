@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKODA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'SKODANext';
+            src: url('fonts/SKODANext-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SKODANext';
+            src: url('fonts/SKODANext-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SKODANext';
+            src: url('fonts/SKODANext-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'SKODANext';
+            src: url('fonts/SKODANext-BoldItalic.ttf') format('truetype');
+            font-weight: bold;
+            font-style: italic;
+        }
+        .bg-custom {
+            background-color: #0E3A30;
+        }
+        .text-custom {
+            color: #78FAAE;
+        }
+        .bg-input {
+            background-color: #78FAAE;
+        }
+        .bg-button {
+            background-color: #78FAAE;
+        }
+        body {
+            font-family: 'SKODANext', sans-serif;
+        }
+        input:checked ~ .dot {
+        transform: translateX(25px);
+        background-color: #0e3a30;
+        }
+        input:checked ~ .block {
+            background-color: #78FAAE;
+        }
+    </style>
+</head>
+<body class="bg-custom min-h-screen flex items-center justify-center">
+    <div class="container mx-auto max-w-md p-6">
+        <svg class="text-custom mx-auto mb-10" viewBox="0 0 566 80" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="250" height="80">
+            <path class="cls-1" d="M116.6,79.42V0h18.92v30.93h25.07L193.17,0h25.07l-41.44,39.49,42.19,39.94h-26.57l-32.58-31.38h-24.32v31.38h-18.92ZM39.49,16.51L28.67,0h65.31l-10.51,16.51h-43.99ZM490.27,48.64h38.13l-19.07-33.78-19.07,33.78h0ZM451.83,79.42L496.42,0h26.27l44.59,79.42h-21.62l-7.66-13.66h-37.98l-10.21-16.21-16.81,29.88h-21.17ZM294.91,79.42h-40.69c-19.22,0-30.33-11.11-30.33-29.58v-20.27c0-18.47,11.11-29.58,30.33-29.58h40.69c19.22,0,30.33,11.11,30.33,29.58v20.27c0,18.47-11.11,29.58-30.33,29.58h0ZM254.67,62.31h39.78c7.21,0,11.86-4.51,11.86-11.56v-22.07c0-7.06-4.65-11.56-11.86-11.56h-39.78c-7.21,0-11.86,4.5-11.86,11.56v22.07c0,7.06,4.65,11.56,11.86,11.56h0ZM346.35,79.42V0h66.51c19.82,0,31.23,11.41,31.23,30.33v18.77c0,18.92-11.41,30.33-31.23,30.33h-66.51ZM365.26,62.31h47.14c7.81,0,12.76-4.81,12.76-12.31v-20.57c0-7.51-4.95-12.31-12.76-12.31h-47.14v45.19h0ZM0,79.42h73.26c15.16,0,22.52-7.36,22.52-22.22v-8.71c0-11.26-6.91-18.17-18.47-18.17H26.57c-3.45,0-5.71-2.25-5.71-5.71V0h-1.2C9.01,0,2.25,6.91,2.25,18.32v6.61c0,15.31,6.91,22.22,22.52,22.22h52.4v9.76c0,3.45-2.25,5.71-5.7,5.71H10.51L0,79.42Z"/>
+        </svg>
+        <form>
+            <div class="mb-6 flex items-center">
+                <svg class="w-10 h-10 text-custom mr-3" viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M54.24,41.06l-6.92-6.92c-1.91-1.91-5.01-1.91-6.92,0l-3.15,3.15c-1.45,1.45-3.8,1.44-5.24,0l-13.64-13.65
+                            c-1.45-1.45-1.45-3.79,0-5.24c.51-.51,1.96-1.96,3.15-3.15c1.9-1.9,1.93-4.99,0-6.92L14.6,1.43c-1.91-1.91-5.01-1.91-6.92,0
+                            c-1.42,1.41-1.88,1.87-2.52,2.5c-6.88,6.88-6.88,18.08,0,24.96l21.6,21.62c6.9,6.9,18.06,6.9,24.96,0l2.52-2.52
+                            c1.91-1.91,1.91-5.01,0-6.92zM45.01,36.45l6.92,6.92c.64.64.64,1.67,0,2.31l-1.15,1.15l-9.23-9.23l1.15-1.15
+                            c.64-.64,1.67-.64,2.31,0zM12.29,3.74l6.92,6.9c.64.64.64,1.67,0,2.31l-1.15,1.15L8.84,4.88l1.15-1.14
+                            c.64-.64,1.67-.64,2.31,0zM29.07,48.19L7.47,26.58c-5.32-5.32-5.62-13.68-.9-19.35l9.19,9.19c-2.42,2.74-2.32,6.91.3,9.53
+                            l13.63,13.65c0,0,0,0,0,0c2.62,2.62,6.79,2.72,9.53.3l9.2,9.2c-5.66,4.71-13.99,4.46-19.35-.9z"/>
+                </svg>
+                <input type="tel" id="phone" class="mt-1 p-3 block w-full border rounded-full bg-input placeholder-gray-800" placeholder="(xxx) xxx - xxxx">
+            </div>            
+            <div class="mb-6 flex items-center">
+                <svg class="w-10 h-10 text-custom mr-3" viewBox="0 0 64 64" fill="currentColor">
+                    <path  d="M26.53.29c-.9-.19-1.84-.29-2.8-.29-7.43,0-13.45,6.04-13.45,13.47v7.7c0,3.66,1.47,6.99,3.85,9.42v4.73l-6.84,1.7c-4.99,1.25-8.11,6.18-7.1,11.22l2.41,12.05c.18.9.97,1.55,1.89,1.55h38.43c.92,0,1.71-.65,1.89-1.55l2.41-12.05c1.01-5.05-2.11-9.97-7.11-11.22-.41-.1-6.59-1.61-7-1.71v-4.47c2.53-2.45,4.1-5.88,4.1-9.67v-7.7c0-.96-.1-1.89-.29-2.8C35.06,1.42,26.53.29,26.53.29ZM30.72,38.69l.63.15c-1.8,2.33-4.59,3.75-7.62,3.75s-5.87-1.44-7.66-3.8l.43-.11c.86-.21,1.46-.98,1.46-1.87v-3.48c1.75.83,3.71,1.3,5.77,1.3s3.84-.42,5.52-1.18v3.37c0,.89.61,1.66,1.47,1.87ZM33.38,21.17c0,5.31-4.34,9.62-9.65,9.62s-9.62-4.32-9.62-9.62v-5.77h9.62c3.56,0,6.94-1.42,9.43-3.86.13.62.22,1.27.22,1.93v7.7ZM23.73,3.85c3.14,0,5.94,1.51,7.69,3.85-1.81,2.4-4.66,3.85-7.69,3.85h-9.43c.89-4.39,4.78-7.7,9.43-7.7ZM43.44,47.49l-2.1,10.5H6.06l-2.1-10.5c-.61-3.03,1.27-5.98,4.26-6.73l3.88-.97c2.4,4.09,6.8,6.66,11.62,6.66s9.2-2.55,11.6-6.63l3.84.94c2.99.75,4.87,3.71,4.26,6.73Z"/>
+                </svg>
+                <input type="text" id="name" class="mt-1 p-3 block w-full border rounded-full bg-input placeholder-gray-800" placeholder="Adınız, Soyadınız">
+            </div>
+            <div class="mb-6 flex items-center">
+                <svg class="w-10 h-10 text-custom mr-3" viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M48.2,21.1c0-.42-.17-.83-.47-1.13l-5.96-5.96V1.61c0-.89-.72-1.61-1.61-1.61H8.03c-.89,0-1.61.72-1.61,1.61v12.4L.47,19.96s-.01.01-.02.02C.15,20.29,0,20.7,0,21.1c0,0,0,0,0,0v28.92c0,2.66,2.17,4.82,4.82,4.82h38.56c2.66,0,4.82-2.16,4.82-4.82v-28.92s0,0,0,0ZM44.32,21.1l-2.55,2.55v-5.1l2.55,2.55ZM38.56,3.21v11.46h0v12.19l-8.7,8.7h-11.52l-8.7-8.7v-12.19h0V3.21h28.92ZM6.43,23.65l-2.55-2.55,2.55-2.55v5.1ZM3.21,49.35v-24.37l12.19,12.19-12.19,12.19ZM5.49,51.63l12.85-12.85h11.52l12.85,12.85H5.49ZM44.98,49.35l-12.19-12.19,12.19-12.19v24.37Z"/>
+                </svg>
+                <input type="email" id="email" class="mt-1 p-3 block w-full border rounded-full bg-input placeholder-gray-800" placeholder="E-Posta Adresiniz">
+            </div>
+            <div class="flex items-center justify-between mb-6">
+                <label for="terms" class="flex items-center cursor-pointer">
+                    <div class="relative">
+                        <input type="checkbox" id="terms" class="sr-only">
+                        <div class="block bg-slate-200 w-14 h-8 rounded-full"></div>
+                        <div class="dot absolute left-1 top-1 bg-neutral-900 w-6 h-6 rounded-full transition"></div>
+                    </div>
+                    <div class="ml-3 text-custom">Kullanım Koşulları ve kuralları okudum ve kabul ettim.</div>
+                </label>
+            </div>
+            <button type="submit" class="w-full bg-button py-3 rounded-full text-xl font-bold text-[color:#0e3a30]">Başla</button>
+        </form>
+    </div>
+</body>
+</html>
+                
